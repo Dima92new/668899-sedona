@@ -5,8 +5,99 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+  	<header class="main-header">
+  		<a class="main-header-logo">
+  		<img src="img/toplogo.svg" width="100" height="100" alt="Логотип «City of Sedona»">
+  	    </a>
+  		<nav class="main-navigation">
+  			<ul class="site-navigation">
+  				<li><a href="info.html">информация</a></li>
+  				<li><a href="photovideo.html">фото и видео</a></li>
+  				<li><a href="statemap.html">карта штата</a></li>
+  				<li><a href="hotels.html">гостиницы</a></li>
+  			</ul>	
+		<img src="img/botlogo.svg" width="100" height="100" alt="Главная тема или фон?"> <!-- Нужна ли она и как ее вставлять И нужно ли писать текст или нет который на ней. Что вообще с ней делать?????Писать ли что то в размерах обоих img? -->
+		</nav>
+  	</header>
+    <main class="container">
+		<h1 class="name-hidden">Все о седоне</h1>
+			<h2 class="sedona-description">Седона небольшой городок в Аризоне, заслуживающий большего!</h2>
+			<p class="anounce-features">Рассмотри 5 причин, по которым Седона круче, чем Гранд каньон!</p>  <!-- Это может как h* должно быть или что с этим делать? и вообще весь текст который там есть он написан заглавными буквами имеет ли какое то значение как я его тут буду писать? -->
+    	<section class="features">
+    		<h1 class="hiddenfeatures">Преимущества</h1>
+    		<ul class="feature-list"><!-- Можно ли первую вот эту часть разметить как section и aside картинка а потом уже делать список и потом повторить секшн и асайд? не знаю как правильнее.  -->
+    			<li class="feature-item">
+    				<h2 class="item-name">Настоящий городок</h2>
+    				<p class="item-number">— №1 —</p><!-- немного смущает еще порядок h2 h3 и тд -->
+    				<p class="item-text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+    			</li>
+    			<li class="feature-item"></li><!-- Оставить пустым и потом картинка будет вставлена сюда фоном? Или как тут делать?-->
+    			<li class="feature-item">
+    				<h2 class="item-name">Жилье</h2>
+    				<p class="item-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+    			</li>
+    			<li class="feature-item">
+    				<h2 class="item-name">Еда</h2>
+    				<p class="item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+    			</li>
+    			<li class="feature-item">
+    				<h2 class="item-name">Сувениры</h2>
+    				<p class="item-text">Не только Китайского, но и местного производства!</p>
+    			</li>
+    			<li class="feature-item"></li><!-- Повторяю пустое поле как уже было в строках 33-34 -->
+    			<li class="feature-item">
+    				<h2 class="item-name">Там есть мост дьявола</h2>
+    				<p class="item-number">— №2 —</p>
+    				<p class="item-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+    			</li>
+    			<li class="feature-item">
+    				<h2 class="item-name">Небольшая площадь</h2>
+    				<p class="item-number">— №3 —</p>
+    				<p class="item-text">Все допстопримечательности находятся очень близко</p>
+    			</li>
+    			<li class="feature-item">
+    				<h2 class="item-name">Красивая дорога</h2>
+    				<p class="item-number">— №4 —</p>
+    				<p class="item-text">Ехать в седону из лас-вегаса совсем не скучно!</p>
+    			</li>
+    			<li class="feature-item">
+    				<h2 class="item-name">Мало туристов</h2>
+    				<p class="item-number">— №5 —</p>
+    				<p class="item-text">Большинство едет в гранд каньон и толпится там</p>
+    			</li>
+    		</ul>
+    	</section>
+    	<section class="intrestingoffer">
+    		<h1 class="intresting">Заинтересовались?</h1>
+    		<p class="offers"> Укажите предпологаемые даты поездки</p>
+    		<p class="offers">и мы покажем вам лучшие предложения гостиниц в седоне</p>
+    		<div class="hotel-search">
+    			<p>поиск гостиницы в седоне</p> <!--  смотрю текста много одинакого на всей странице мне как для каждого <p> свой класс задавать или как? как вообще понять когда задавать класс а когда нет? -->
+    		</div>
+    		<!-- что делать с формой (квадратиком) куда уже заносятся параметры поиска? -->
+    	</section>
+    	<section class="map">
+    	<h1 class="mapnamehidden">Здесь карта</h1> <!--Сюда как нибудь карта ставится - что с ней делать? -->
+    	</section>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+  	</main> <!-- все ли это что надо делать на этапе разметки?Или  еще какие то элементы надо добавить?  -->
 
+    
+<footer class="main-footer">
+	<p class="hashtag">#visitsedona</p>
+	<ul>
+		<li><a class="social-button" href="#">Twitter</a></li>
+		<li><a class="social-button" href="#">Facebook</a></li>
+		<li><a class="social-button" href="#">Youtube</a></li>
+	</ul>
+	<p class="movetoacademy">website by</p>
+	<a class="html-academy-logo" href="">
+	<img class="academy-logo" width="100" height="100" src="img/academylogo.gif" alt="В академию">
+	 <!--покапался в интернете вроде так? -->
+	</a>
+</footer>
   </body>
 </html>
+<!-- просто мои заметки: <div class="advantage-img">
+            <img src="http:" alt="Фотография Седоны" width="800" height="256">
+          </div> -->
