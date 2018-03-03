@@ -6,81 +6,92 @@
   </head>
   <body>
   	<header class="main-header">
-  		<a class="main-header-logo">
-  		<img src="img/toplogo.svg" width="100" height="100" alt="Логотип «City of Sedona»">
-  	    </a>
-  		<nav class="main-navigation">
-  			<ul class="site-navigation">
-  				<li><a href="info.html">информация</a></li>
-  				<li><a href="photovideo.html">фото и видео</a></li>
-  				<li><a href="statemap.html">карта штата</a></li>
-  				<li><a href="hotels.html">гостиницы</a></li>
-  			</ul>	
-		<img src="img/botlogo.svg" width="100" height="100" alt="Главная тема или фон?"> <!-- Нужна ли она и как ее вставлять И нужно ли писать текст или нет который на ней. Что вообще с ней делать?????Писать ли что то в размерах обоих img? -->
-		</nav>
+  		<!--<a class="main-header-logo"> На главной странице это не ссылка? Оставлять так? -->
+  			<img src="img/toplogo.svg" width="150" height="100" alt="Логотип «City of Sedona»">
+  	     		<nav class="main-navigation">
+  					<ul class="site-navigation">
+  						<li><a href="info.html">информация</a></li>
+  						<li><a href="photovideo.html">фото и видео</a></li>
+  						<li><a href="statemap.html">карта штата</a></li>
+  						<li><a href="hotels.html">гостиницы</a></li>
+  					</ul>	
+  					<div class="main-background">
+						<img src="img/botlogo.svg" width="150" height="100" alt="Главная тема или фон?"> <!-- Если эта картинка вставляется фоном - то тут ставится просто пустой контейнер див или как это делается правильно?-->
+					</div>
+				</nav>
   	</header>
     <main class="container">
-		<h1 class="name-hidden">Все о седоне</h1>
+		<h1 class="hidden-sedona-title-">Все о седоне</h1>
 			<h2 class="sedona-description">Седона небольшой городок в Аризоне, заслуживающий большего!</h2>
-			<p class="anounce-features">Рассмотри 5 причин, по которым Седона круче, чем Гранд каньон!</p>  <!-- Это может как h* должно быть или что с этим делать? и вообще весь текст который там есть он написан заглавными буквами имеет ли какое то значение как я его тут буду писать? -->
+			<p class="anounce-features">Рассмотри 5 причин, по которым Седона круче, чем Гранд каньон!</p>  <!-- Я имел ввиду правильно ли сделана у меня вся система заголовков? Нумерация и тд.Соответствует ли h1 h2 и тд? И на странице h1- только один? Но у каждой секции свой h1 вроде? Пусть и скрытый или я ошибаюсь - вроде на лекции так показывали? Да и вроде даже валидатор такое показал?  -->
     	<section class="features">
-    		<h1 class="hiddenfeatures">Преимущества</h1>
-    		<ul class="feature-list"><!-- Можно ли первую вот эту часть разметить как section и aside картинка а потом уже делать список и потом повторить секшн и асайд? не знаю как правильнее.  -->
-    			<li class="feature-item">
-    				<h2 class="item-name">Настоящий городок</h2>
-    				<p class="item-number">— №1 —</p><!-- немного смущает еще порядок h2 h3 и тд -->
-    				<p class="item-text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
-    			</li>
-    			<li class="feature-item"></li><!-- Оставить пустым и потом картинка будет вставлена сюда фоном? Или как тут делать?-->
-    			<li class="feature-item">
-    				<h2 class="item-name">Жилье</h2>
-    				<p class="item-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-    			</li>
-    			<li class="feature-item">
-    				<h2 class="item-name">Еда</h2>
-    				<p class="item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-    			</li>
-    			<li class="feature-item">
-    				<h2 class="item-name">Сувениры</h2>
-    				<p class="item-text">Не только Китайского, но и местного производства!</p>
-    			</li>
-    			<li class="feature-item"></li><!-- Повторяю пустое поле как уже было в строках 33-34 -->
-    			<li class="feature-item">
-    				<h2 class="item-name">Там есть мост дьявола</h2>
-    				<p class="item-number">— №2 —</p>
-    				<p class="item-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-    			</li>
-    			<li class="feature-item">
-    				<h2 class="item-name">Небольшая площадь</h2>
-    				<p class="item-number">— №3 —</p>
-    				<p class="item-text">Все допстопримечательности находятся очень близко</p>
-    			</li>
-    			<li class="feature-item">
-    				<h2 class="item-name">Красивая дорога</h2>
-    				<p class="item-number">— №4 —</p>
-    				<p class="item-text">Ехать в седону из лас-вегаса совсем не скучно!</p>
-    			</li>
-    			<li class="feature-item">
-    				<h2 class="item-name">Мало туристов</h2>
-    				<p class="item-number">— №5 —</p>
-    				<p class="item-text">Большинство едет в гранд каньон и толпится там</p>
-    			</li>
-    		</ul>
+    		<!--<h1 class="hidden-features">Преимущества</h1>-->
+    			<ul class="feature-list">
+    				<li class="feature-item">
+    					<div class="item-box">
+    						<h2 class="item-name">Настоящий городок</h2>
+    						<p class="item-number">— №1 —</p>
+    						<p class="item-text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+    					</div>
+    					<figure class="item-image">
+    						<img src="img/..." alt="Первая Фотография Седоны" width="800" height="256"> <!-- Так правильно с картинкой то этой? Я не особо все таки понял&???? и Figure или див?   -->
+    					</figure>
+    				</li> <!-- так я поняли или нет? касаемо 2,3 див в каждом элементе списка?  И надо ли голубые как то по своему обозначать или можно потом их отстилизовать указывая конкретный номер этого квадратика?-->
+    				<li class="feature-item">
+    					<div class="item-box">
+    						<h2 class="item-name">Жилье</h2>
+    						<p class="item-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+    					</div>
+    					<div class="item-box">
+    						<h2 class="item-name">Еда</h2>
+    						<p class="item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+    					</div>
+    					<div class="item-box">
+    						<h2 class="item-name">Сувениры</h2>
+    						<p class="item-text">Не только Китайского, но и местного производства!</p>
+    					</div>
+    				<li class="feature-item">
+    					<figure class="item-image">
+    						<img src="img/..." alt="Вторая Фотография Седоны" width="800" height="256"> <!-- Так правильно с картинкой то этой? Я не особо все таки понял???? и еще Figure или див?  -->
+    					</figure>
+        				<div class="item-box">
+    						<h2 class="item-name">Там есть мост дьявола</h2>
+    						<p class="item-number">— №2 —</p>
+    						<p class="item-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+    					</div>
+    				</li>
+    				<li class="feature-item">
+    					<div class="item-box">
+    						<h2 class="item-name">Небольшая площадь</h2>
+    						<p class="item-number">— №3 —</p>
+    						<p class="item-text">Все допстопримечательности находятся очень близко</p>
+    				    </div>
+    					<div class="item-box">
+    						<h2 class="item-name">Красивая дорога</h2>
+    						<p class="item-number">— №4 —</p>
+    						<p class="item-text">Ехать в седону из лас-вегаса совсем не скучно!</p>
+    					</div>
+    					<div class="item-box">
+    						<h2 class="item-name">Мало туристов</h2>
+    						<p class="item-number">— №5 —</p>
+    						<p class="item-text">Большинство едет в гранд каньон и толпится там</p>
+    					</div>
+    				</li>
+    			</ul>
     	</section>
     	<section class="intrestingoffer">
-    		<h1 class="intresting">Заинтересовались?</h1>
-    		<p class="offers"> Укажите предпологаемые даты поездки</p>
-    		<p class="offers">и мы покажем вам лучшие предложения гостиниц в седоне</p>
-    		<div class="hotel-search">
-    			<p>поиск гостиницы в седоне</p> <!--  смотрю текста много одинакого на всей странице мне как для каждого <p> свой класс задавать или как? как вообще понять когда задавать класс а когда нет? -->
+    			<h2 class="intresting">Заинтересовались?</h2>
+    			<p class="offers"> Укажите предпологаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p> <!-- Вот тут я короче вообще не понимаю чето как и что?   надо это  еще в див оборачивать ?-->
     		</div>
-    		<!-- что делать с формой (квадратиком) куда уже заносятся параметры поиска? -->
+    		<div class="hotel-search">
+    			<p>поиск гостиницы в седоне</p>
+    		</div>	
     	</section>
-    	<section class="map">
-    	<h1 class="mapnamehidden">Здесь карта</h1> <!--Сюда как нибудь карта ставится - что с ней делать? -->
-    	</section>
+    	<div class="map">
+    	<!--	<h1 class="hidden-mapname">Здесь карта</h1>  Заменил секшн на див - теперь правильно?  -->
+    	</div>
 
-  	</main> <!-- все ли это что надо делать на этапе разметки?Или  еще какие то элементы надо добавить?  -->
+  	</main> 
 
     
 <footer class="main-footer">
@@ -91,13 +102,26 @@
 		<li><a class="social-button" href="#">Youtube</a></li>
 	</ul>
 	<p class="movetoacademy">website by</p>
-	<a class="html-academy-logo" href="">
+	<a class="html-academy-logo" href="https://htmlacademy.ru">
 	<img class="academy-logo" width="100" height="100" src="img/academylogo.gif" alt="В академию">
-	 <!--покапался в интернете вроде так? -->
+	 <!--покапался в интернете вроде так? --><!-- это удалить пока? -->
 	</a>
 </footer>
   </body>
 </html>
-<!-- просто мои заметки: <div class="advantage-img">
-            <img src="http:" alt="Фотография Седоны" width="800" height="256">
-          </div> -->
+
+<!-- Это я для себя пишу.
+
+
+
+.hidden {         
+position: absolute;
+clip: rect(0 0 0 0);
+width: 1px;
+height: 1px;
+margin: -1px;
+}
+body 
+{
+text-transform: uppercase;
+}
