@@ -13,19 +13,19 @@
   						<li><a href="info.html">информация</a></li>
   						<li><a href="photovideo.html">фото и видео</a></li>
   						<li><a href="statemap.html">карта штата</a></li>
-  						<li><a href="hotels.html">гостиницы</a></li>
+  						<li><a href="hotels.html">гостиницы</a></li> <!-- сслыки делать как <a> или <link> плюс наверное тут еще им класс надо задать или нет? мы же когда нажимать будем там что то с ними будет происходить или нет?? тоже касается и второй страницы, у меня отличаются немного хедеры -->
   					</ul>	
   					<div class="main-background">
-						<img src="img/botlogo.svg" width="150" height="100" alt="Главная тема или фон?"> <!-- Если эта картинка вставляется фоном - то тут ставится просто пустой контейнер див или как это делается правильно?-->
+					<!-- 	<img src="img/botlogo.svg" width="150" height="100" alt="Главная тема или фон?"> Если эта картинка вставляется фоном - то тут ставится просто пустой контейнер див или как это делается правильно? и куда ее относить в хедер или в маин чтобы хедер был одинаковый везде?-->
 					</div>
 				</nav>
   	</header>
     <main class="container">
-		<h1 class="hidden-sedona-title-">Все о седоне</h1>
+		<h1 class="hidden">Все о седоне</h1>
 			<h2 class="sedona-description">Седона небольшой городок в Аризоне, заслуживающий большего!</h2>
 			<p class="anounce-features">Рассмотри 5 причин, по которым Седона круче, чем Гранд каньон!</p>  <!-- Я имел ввиду правильно ли сделана у меня вся система заголовков? Нумерация и тд.Соответствует ли h1 h2 и тд? И на странице h1- только один? Но у каждой секции свой h1 вроде? Пусть и скрытый или я ошибаюсь - вроде на лекции так показывали? Да и вроде даже валидатор такое показал?  -->
     	<section class="features">
-    		<!--<h1 class="hidden-features">Преимущества</h1>-->
+    		<!--<h1 class="hidden">Преимущества</h1>-->
     			<ul class="feature-list">
     				<li class="feature-item">
     					<div class="item-box">
@@ -88,25 +88,25 @@
     		</div>	
     	</section>
     	<div class="map">
-    	<!--	<h1 class="hidden-mapname">Здесь карта</h1>  Заменил секшн на див - теперь правильно?  -->
+    	<!--	<h1 class="hidden">Здесь карта</h1>  Заменил секшн на див - теперь правильно?  -->
     	</div>
 
   	</main> 
 
     
-<footer class="main-footer">
-	<p class="hashtag">#visitsedona</p>
-	<ul>
+    <footer class="main-footer">
+	   <p class="hashtag">#visitsedona</p>
+	   <ul>
 		<li><a class="social-button" href="#">Twitter</a></li>
 		<li><a class="social-button" href="#">Facebook</a></li>
 		<li><a class="social-button" href="#">Youtube</a></li>
-	</ul>
-	<p class="movetoacademy">website by</p>
-	<a class="html-academy-logo" href="https://htmlacademy.ru">
-	<img class="academy-logo" width="100" height="100" src="img/academylogo.gif" alt="В академию">
+	   </ul>
+	   <p class="movetoacademy">website by</p>
+	   <a class="html-academy-logo" href="https://htmlacademy.ru">
+	       <img class="academy-logo" width="100" height="100" src="img/academylogo.gif" alt="В академию">
 	 <!--покапался в интернете вроде так? --><!-- это удалить пока? -->
-	</a>
-</footer>
+	   </a>
+    </footer>
   </body>
 </html>
 
