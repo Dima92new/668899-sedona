@@ -16,97 +16,116 @@
   						<li><a href="statemap.html">карта штата</a></li>
   						<li><a href="hotels.html">гостиницы</a></li> 
   					</ul>	
-  					
 				</nav>
   	</header>
    <main>
-         <div class="hotels-background">
-            <img src="img/hotelsbackground.svg" width="150" height="100" alt="Фон формы"> <!-- Здесь ставлю просто другую картинку фоном переношу ее в мейн?? и эта вся форма пока не размечается?-->
+        <div class="hotels-background">
+            <!-- нужен ли здесь этот див или форма целиком через css будет сделана? -->
         </div>
-        <h1 class="hidden">Поиск жилья в седоне</h1>
-        <table class="search"> <!-- тут все делается таблицей или списком?Можно ли это комбинировать? -->
-            <tr>
-                <td class="found">
-                    <h2>найдено:</h2>
-                    <div class="search-result-number"></div> <!--Тут вот что то будет - число результатов поиска - оно ведь само как то считаться должно? -->
-                </td>
-                <td class="search-filter">
-                    <span class="search-sort"> сортировка:</span>
-                </td>
-                <td class="search-filter-condition">
-                    <a class="filter-result" href="#">По цене</a>
-                </td>
-                <td class="search-filter-condition">
-                    <a class="filter-result" href="#">По типу</a>
-                </td>
-                <td class="search-filter-condition">
-                    <a class="filter-result" href="#">По рейтингу</a>
-                </td>
-                <td class="search-filter-up">                       <!-- тут будут стрелочки, как это все делается не знаю, делаю так как я все это понимаю, после проверки буду все переделывать если что не правильно. я так понимаю что тут вариантов реализации в принципе много существует ( не конкретно в данной работе а вообще) -->
+        <section class="search">
+            <h2 class="hidden">Поиск жилья в седоне</h2>
+            <ul>
+                <li class="found">
+                    <h2>Найдено</h2>
+                    <span class="search-result-number"></span>
+                </li>
+                <li>
+                    <div class="search-filter">
+                        <span class="search-filter-sort">Сортировка</span>
+                    </div>
+                    <div class="search-filter-condition">
+                         <a class="filter-result" href="#">По цене</a>
+                    </div>
+                    <div class="search-filter-condition">
+                         <a class="filter-result" href="#">По типу</a>
+                    </div>
+                    <div class="search-filter-condition">
+                         <a class="filter-result" href="#">По рейтингу</a>
+                    </div>
+                </li>  
+                <li class="search-filter-pointers">
                     <a class="filter-result" href="#"></a>
-                </td>
-                <td class="search-filter-down">
-                    <a class="filter-result" href="#"></a>
-                </td>
-            </tr>
-        </table>
+                    <a class="filter-result" href="#"><!--вопрос такой- стрелочки будут картинками обернутыми в ссылку? так же про маленькие картинки в футере --></a> 
+                </li>
+            </ul>
+        </section>
         <section class="catalog">
-            <h2 class="hidden">результаты поиска жилья</h2> <!--Если спрятаный то h1 или h2 делать? -->
+            <h2 class="hidden">результаты поиска жилья</h2> 
             <ul class="catalog-list">
                 <li class="catalog-item">
-                        <div class="catalog-item-description">
-                            <img class="catalog-item-image" src="#" width="150" height="150" alt="Amara Resort & spa">
-                                <div class=catalog-item-specification> <!-- нужно ли картинку еще во что то оборачивать? в ссылку на полное изображение или еще че нибудь? -->
-                                     <h3 class="catalog-item-name">Amara Resort & spa</h3>
-                                     <span class="catalog-item-type">Гостиница</span>
-                                     <span class="catalog-item-price"> от 4000 р.</span> <!-- вопросов тьма просто как это все расставляется и тд и тп  span или p или еще как?-->
-                                     <a class="button-info" href="#">подробнее</a>
-                                     <a class="button-bookin" href="#">забронировать</a>
-                                </div>     
-                        </div>
-                   <div class="catalog-item-rank">
-                    <!--Тут еще же звездочки должны быть или они еще в отдельном диве будут? или как? Да я читаю там групповой чат и там кто-что пишет и фиг знает что правильно а что нет - потому лучше у тебя узнавать все я считаю --> 
-                    <p class="catalog-item-rating">Рейтинг: 8,5</p>
+                     <div class="catalog-item-description">
+                        <img class="catalog-item-image" src="#" width="150" height="150" alt="Amara Resort & spa">
+                        <div class=catalog-item-specification> <!-- Ты написал название обернуть - ок , а я имел ввиду картинку? --> 
+                            <a class="gotohotel" href="#">
+                                 <h3 class="catalog-item-name">Amara Resort & spa</h3>
+                            </a>
+                            <span class="catalog-item-type">Гостиница</span>
+                            <span class="catalog-item-price"> от 4000 р.</span> 
+                                 <div class="button-catalog"> <!-- так я на счет классов понял? дополнительный див -->
+                                    <a class="button-catalog-info" href="#">подробнее</a>
+                                    <a class="button-catalog-bookin" href="#">забронировать</a>
+                                </div>
+                        </div>     
+                    </div>
+                    <div class="catalog-item-rank">
+                        <div class="catalog-item-stars">
+                            <img src=# width="150" height="100" alt="Рейтинг звезд"><!-- место под звездочки, так? -->
+                         </div>
+                    <p class="catalog-item-rating">Рейтинг:</p>
+                    <span class="quality"> </span> <!-- остается пустым или как если рейтинг сам будет сюда попадать так скажем? -->
                    </div>
                 </li>
                 <li class="catalog-item">
-                        <div class="catalog-item-description">
-                            <img class="catalog-item-image" src="#" width="150" height="150" alt="Desert Qual Inn">
-                                <div class=catalog-item-specification> <!-- нужно ли картинку еще во что то оборачивать? в ссылку на полное изображение или еще че нибудь? -->
+                    <div class="catalog-item-description">
+                        <img class="catalog-item-image" src="#" width="150" height="150" alt="Desert Qual Inn">
+                            <div class=catalog-item-specification> 
+                                <a class="gotohotel" href="#">
                                      <h3 class="catalog-item-name">Desert Qual Inn</h3>
-                                     <span class="catalog-item-type">Мотель</span>
-                                     <span class="catalog-item-price"> от 3000 р.</span> <!-- вопросов тьма просто как это все расставляется и тд и тп -->
-                                     <a class="button-info" href="#">подробнее</a>
-                                     <a class="button-bookin" href="#">забронировать</a>
-                                </div>     
+                                </a>
+                                <span class="catalog-item-type">Мотель</span>
+                                <span class="catalog-item-price"> от 3000 р.</span>
+                                    <div class="button-catalog"> 
+                                        <a class="button-catalog-info" href="#">подробнее</a>
+                                        <a class="button-catalog-bookin" href="#">забронировать</a>
+                                    </div>
+                            </div>     
+                    </div>
+                    <div class="catalog-item-rank">
+                        <div class="catalog-item-stars">
+                            <img src=# width="150" height="100" alt="Рейтинг звезд"><!-- место под звездочки, -->
                         </div>
-                   <div class="catalog-item-rank">
-                    <!--Тут еще же звездочки должны быть или они еще в отдельном диве будут? или как? Да я читаю там групповой чат и там кто-что пишет и фиг знает что правильно а что нет - потому лучше у тебя узнавать все я считаю --> 
-                    <p class="catalog-item-rating">Рейтинг: 8,9</p>
-                   </div>
+                        <p class="catalog-item-rating">Рейтинг:</p>
+                        <span class="quality"> </span>
+                    </div>
                 </li>
                 <li class="catalog-item">
-                        <div class="catalog-item-description">
-                            <img class="catalog-item-image" src="#" width="150" height="150" alt="Desert Qual Inn">
-                                <div class=catalog-item-specification> <!-- нужно ли картинку еще во что то оборачивать? в ссылку на полное изображение или еще че нибудь? -->
-                                     <h3 class="catalog-item-name">Villas at poco Diablo</h3>
-                                     <span class="catalog-item-type">Апартаменты</span> 
-                                     <span class="catalog-item-price"> от 2000 р.</span> <!-- вопросов тьма просто как это все расставляется и тд и тп -->
-                                     <a class="button-info" href="#">подробнее</a>
-                                     <a class="button-bookin" href="#">забронировать</a>
-                                </div>     
+                    <div class="catalog-item-description">
+                        <img class="catalog-item-image" src="#" width="150" height="150" alt="Desert Qual Inn">
+                            <div class=catalog-item-specification> 
+                                <a class="gotohotel" href="#">
+                                    <h3 class="catalog-item-name">Villas at poco Diablo</h3>
+                                </a>
+                                <span class="catalog-item-type">Апартаменты</span> 
+                                <span class="catalog-item-price"> от 2000 р.</span>
+                                    <div class="button-catalog"> 
+                                        <a class="button-catalog-info" href="#">подробнее</a>
+                                        <a class="button-catalog-bookin" href="#">забронировать</a>
+                                    </div>
+                            </div>     
+                    </div>
+                    <div class="catalog-item-rank">
+                        <div class="catalog-item-stars">
+                            <img src=# width="150" height="100" alt="Рейтинг звезд"><!-- место под звездочки, -->
                         </div>
-                   <div class="catalog-item-rank">
-                    <!--Тут еще же звездочки должны быть или они еще в отдельном диве будут? или как? Да я читаю там групповой чат и там кто-что пишет и фиг знает что правильно а что нет - потому лучше у тебя узнавать все я считаю --> 
-                    <p class="catalog-item-rating">Рейтинг: 9,2</p>
-                   </div>
+                        <p class="catalog-item-rating">Рейтинг:</p>
+                        <span class="quality"></span>
+                    </div>
                 </li>
             </ul>
         </section>
        
    </main>
 
-    
     <footer class="main-footer">
 	   <p class="hashtag">#visitsedona</p>
 	   <ul>
@@ -117,7 +136,6 @@
 	   <p class="movetoacademy">website by</p>
 	   <a class="html-academy-logo" href="https://htmlacademy.ru">
 	        <img class="academy-logo" width="100" height="100" src="img/academylogo.gif" alt="В академию">
-	        <!--покапался в интернете вроде так? --><!-- это удалить пока? -->
 	   </a>
     </footer>
   </body>
