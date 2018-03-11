@@ -6,7 +6,7 @@
   </head>
   <body>
   	<header class="main-header">
-  		<a class="main-header-logo" href="index.html"> 
+  		<a class="main-header-logo" href="index.html" aria-label:"Возвращение на главную страницу"> 
   			<img src="img/toplogo.png" width="138" height="70" alt="Логотип «City of Sedona»">
         </a>
   	     		<nav class="main-navigation">
@@ -19,9 +19,49 @@
 				</nav>
   	</header>
    <main>
-        <div class="hotels-background">
-            <!-- Тут будет форма и фон -->
-        </div>
+        <section class="search">
+            <form form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                   <legend>Инфраструктура:</legend> 
+                    <ul>
+                        <li class="filter-option">
+                            <input class="hiden filter-input-checkbox" type="checkbox" name="pool" id="1" checked>
+                            <label for="1">Бассейн</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="hiden filter-input-checkbox" type="checkbox" name="parking" id="2">
+                            <label for="2">Паркова</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="hiden filter-input-checkbox" type="checkbox" name="wi-fi" id="3">
+                            <label for="3">Wi-Fi</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                   <legend>Тип жилья:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input class="hiden filter-input-checkbox" type="checkbox" name="hotel" checked id="4">
+                            <label for="4">Гостиница</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="hiden filter-input-checkbox" type="checkbox" name="motel" checked id="5">
+                            <label for="5">Мотель</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="hiden filter-input-checkbox" type="checkbox" name="apartament" checked id="6">
+                            <label for="6">Апартаменты</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                   <legend>Стоимость в сутки (р):</legend>
+
+                   <input type="submit" name="show" value="Показать">
+                </fieldset>
+            </form>
+        </section>
         <section class="search">
             <h2 class="hidden">Поиск жилья в седоне</h2>
             <ul>
@@ -135,9 +175,9 @@
     <footer class="main-footer">
 	   <p class="hashtag">#visitsedona</p>
 	   <ul>
-		<li><a class="social-button" href="#">Twitter</a></li>
-		<li><a class="social-button" href="#">Facebook</a></li>
-		<li><a class="social-button" href="#">Youtube</a></li>
+		<li><a class="social-button" href="https://twitter.com">Twitter</a></li>
+		<li><a class="social-button" href="https://www.facebook.com">Facebook</a></li>
+		<li><a class="social-button" href="https://www.Youtube.com">Youtube</a></li>
 	   </ul>
 	   <p class="movetoacademy">website by</p>
 	   <a class="html-academy-logo" href="https://htmlacademy.ru">

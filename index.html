@@ -88,9 +88,30 @@
     			<p class="offers"> Укажите предпологаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p> 
     			<button type="button" class="button-hotel-search">поиск гостиницы в седоне</button>	
     	</section>
+    	<section class="mainform">
+    		<form action="https://echo.htmlacademy.ru" method="post"> <!-- тут метод пост? -->
+    			<p>
+    				<label for="arrival-date">Дата заезда:</label>
+    				<input type="date" name="date of arrival" id="arrival-date" value="2017-04-24" required>
+    			</p>
+				<p>
+    				<label for="departure-date">Дата выезда:</label>
+    				<input type="date" name="date of arrival" id="arrival-date" value="2017-07-24" required>
+    			</p>
+    			<p>
+    			<label for="adults">Взрослые:</label>
+    			<input type="number" name="Adults" id="adults" size="3" min="1" max="100" value="2">
+    			<label for="children">Дети:</label>
+    			<input type="number" name="children" id="children" size="3" min="1" max="100" value="2">
+    			</p>
+    			<p>
+    				<input type="submit" name="search" value="Найти"> <!-- вот эта кнопка она ведь по сути как бы ссылкой быть должна?отправлять нас на страницу с уже найденным результатом? как это делать? -->
+    			</p>
+    		</form>
+   		</section>
     	<div class="map">
     		<h2 class="hidden">Карта седоны</h2>  
-			<img src="img/map.png" width="1200" height="593"  alt="Где расположена Седона? Седона небольшой городок в Аризоне."> <!--593 это полный размер (футер наложен сверху как на макете) карта как бы залазает под футер как мне кажется и белый фон в футере немного прозрачный ну я так на макете увидел - вообщем пару слов хотел бы узнать о том какие размеры тут выставлять ну и что да как? -->
+			<img src="img/map.png" width="1200" height="593"  alt="Где расположена Седона? Седона небольшой городок в Аризоне."> 
     	</div>
   	</main> 
 
@@ -98,9 +119,9 @@
     <footer class="main-footer">
 	   <p class="hashtag">#visitsedona</p>
 	   <ul>
-		<li><a class="social-button" href="#">Twitter</a></li>
-		<li><a class="social-button" href="#">Facebook</a></li>
-		<li><a class="social-button" href="#">Youtube</a></li>
+		<li><a class="social-button" href="https://twitter.com/">Twitter</a></li>
+		<li><a class="social-button" href="https://www.facebook.com/">Facebook</a></li>
+		<li><a class="social-button" href="https://www.Youtube.com/">Youtube</a></li>
 	   </ul>
 	   <p class="movetoacademy">website by</p>
 	   <a class="html-academy-logo" href="https://htmlacademy.ru">
