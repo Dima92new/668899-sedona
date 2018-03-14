@@ -26,16 +26,16 @@
                    <legend>Инфраструктура:</legend> 
                     <ul>
                         <li class="filter-option">
-                            <input class="hidden filter-input-checkbox" type="checkbox" name="pool" id="1" checked>
-                            <label for="1">Бассейн</label>
+                            <input class="filter-input-checkbox" type="checkbox" name="pool" id="swimingpool" checked>
+                            <label for="swimingpool">Бассейн</label>
                         </li>
                         <li class="filter-option">
-                            <input class="hidden filter-input-checkbox" type="checkbox" name="parking" id="2">
-                            <label for="2">Паркова</label>
+                            <input class="filter-input-checkbox" type="checkbox" name="parking" id="Parking">
+                            <label for="Parking">Паркова</label>
                         </li>
                         <li class="filter-option">
-                            <input class="hidden filter-input-checkbox" type="checkbox" name="wi-fi" id="3">
-                            <label for="3">Wi-Fi</label>
+                            <input class="filter-input-checkbox" type="checkbox" name="wi-fi" id="wirelessnetwork">
+                            <label for="wirelessnetwork">Wi-Fi</label>
                         </li>
                     </ul>
                 </fieldset>
@@ -43,23 +43,23 @@
                    <legend>Тип жилья:</legend>
                     <ul>
                         <li class="filter-option">
-                            <input class="hidden filter-input-checkbox" type="checkbox" name="hotel" checked id="4">
-                            <label for="4">Гостиница</label>
+                            <input class="filter-input-checkbox" type="checkbox" name="hotel" checked id="hotelclass">
+                            <label for="hotelclass">Гостиница</label>
                         </li>
                         <li class="filter-option">
-                            <input class="hidden filter-input-checkbox" type="checkbox" name="motel" checked id="5">
-                            <label for="5">Мотель</label>
+                            <input class="filter-input-checkbox" type="checkbox" name="motel" checked id="motelclass">
+                            <label for="motelclass">Мотель</label>
                         </li>
                         <li class="filter-option">
-                            <input class="hidden filter-input-checkbox" type="checkbox" name="apartament" checked id="6">
-                            <label for="6">Апартаменты</label>
+                            <input class="filter-input-checkbox" type="checkbox" name="apartament" checked id="apart">
+                            <label for="apart">Апартаменты</label>
                         </li>
                     </ul>
                 </fieldset>
                 <fieldset>
                    <legend>Стоимость в сутки (р):</legend>
-                   <input type="range" name="cost" min="0" max="3000" step="100" > <!-- вот тут почитал что вроде как пока не надо делать ничего - посмотрел в принципе как и что тут делается - тут уже применяется js или еще что то? Пока оставлять просто так? И что то мне кажется что я тут с классами намудрил с названиями ( это потом всплывет на этапе css? ну понимание где и какой класс я неправильно задал или назвал??) -->
-                   <input type="submit" name="show" value="Показать">
+                   <input type="range" name="cost" min="0" max="3000" step="100" > <!--это пока вообще пропустить ? -->
+                   <button type="submit" class="button show-form" name="show" value="Показать"></button>
                 </fieldset>
             </form>
         </section>
