@@ -1,0 +1,286 @@
+body {
+	margin: 0px;
+	padding: 0px;
+
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	text-transform: uppercase;
+	color: #333333;
+	font-weight: normal;
+
+	background-color: #fff; /*фон вот белый задавать или там на одном макете по бокам еще серая есть область как с ней быть, она нужна вообще или нет?? */
+}
+
+a {
+	text-decoration: none;
+}
+
+.hidden {         
+position: absolute;
+clip: rect(0 0 0 0);
+width: 1px;
+height: 1px;
+margin: -1px;
+}
+.site-navigation {  /*почему если я убираю это в main-navigation то тут оно не пропадает ведь одно внутри другого?*/
+	list-style-type: none;
+}
+.main-navigation a {
+	line-height: 26px;
+	color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus  /*как задать эелементу чтоб он был активным (т.е когда мы на страничке) - ну т.е как бы значение по умолчанию я так понимаю или как? */
+ {
+	color: #81b3d2;
+}
+.site-navigation a:active {
+	opacity: 0.3;
+}
+.container {
+	list-style:none;
+}
+.main-background {
+	background-image: url("../img/bakcphoto.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.sedona-description {
+	text-align: center;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+.anounce-features {
+	text-align: center;
+	line-height: 26px; /*Если тут вроде отличие текста только в лайнхейте от текста который в боди это прописывать? при том что больше как бы текста нет и  я так понимаю этот параметр не особо на что влияет?*/
+}
+
+.feature-list {
+	text-align: center;
+}
+
+.feature-item,
+.item-box {
+	text-align: center;
+	list-style:none;
+}
+ 
+ /* напиши пожалуйста как правильно было бы обратиться к этим элементам не меняя класс на boxblue а через nth-child что то у меня не получилось. 
+ .item-box div:nth-child(4) потому что дальше такая же проблема у меня встает?
+	background-color: #eeeeee;
+} */
+.item-boxblue
+{
+	color: #ffffff;
+	background-color: #81b3d2;
+}
+
+
+.feature-item h3 {
+	font-weight: bold;
+	font-size: 21px;
+}
+.intresting h2
+{
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 36px;
+	text-align: center; /*можно ли text aling center просто в глобально включить? или включать вот так по каждому классу? */
+}
+.offers {
+	line-height: 24px;
+	text-align: center; /* повторяется текст только lineheight другой. Это нормально так и оставлять? */
+}
+.button-hotel-search {
+	font-size: 21px;
+	line-height: 26px;
+	color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: middle;
+	background-color: #766357;
+	border: none;
+}
+/*тут как правильно задавать  для описания состояний - как обращаться к этому просто классу или к этому классу и батону или к предыдущему классу и батону?*/
+.button-hotel-search:hover,
+.button-hotel-search:focus {
+	background-color: #604e43; 
+	outline:none;
+  }
+
+.button-hotel-search:active { /*как задать опасити только для текста или я тут неправильно как то делаю? можно просто цвет текста поменять в принципе? есть еще вроде яркость?*/
+	opacity: 0.3;
+	outline:none;
+	background-color: #503e33;
+}
+
+.mainform { /*тут текст как то надо центровать и правильно ли я вообще его ровняю то? и вопрос по тени самой этой формочки тут как ее параметры узнать или это позже?? попытался что то не особо получилось */
+	font-weight: bold;
+	line-height: 26px;
+
+	/* как обращаться для описания состояния элементов к полям по стайл гайду? ну и эти - и + я так понимаю картиночки? добавлять классы или же просто ко всем инпутам этой формы  или можно по id?*/
+}
+.searchbutton {
+	font-weight: bold;
+	text-align: center;
+	font-size: 21px;
+	line-height: 26px;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+	border: none;
+	background-color: #81b3d2;
+}
+.searchbutton:hover,
+.searchbutton:focus {
+	background-color: #669ec0;
+	outline:none;
+}
+.searchbutton:active {
+	outline:none;
+	background-color: #5496bd;
+}
+.main-footer {
+	background-color:rgba(255, 255, 255, 0.9);
+}
+.main-footer ul
+{
+	list-style:none;
+}
+.hashtag {
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 26px;
+}
+.social-button {
+	color: #ffffff;
+	background-color: #81b3d2;
+}
+.social-button:hover,
+.social-button:focus {
+	background-color: #669ec0;
+	outline: none;
+}
+.social-button:active {
+	background-color: #5496bd; /*так же и тут вопрос по этим всем картинкам как их сюда ставить ну и куда текст девать наверное так же как с логотипом академии надо вставить эти картинки??? ты уж извини что вопросов много - я в принципе могу наверное у других как-то подсматривать но мне кажется так не особо интересно? или так и делать?*/
+}
+.movetoacademy {
+	line-height: 26px;
+}
+/* вот так не работает - что тогда делать? чтобы так работало надо картинку именно через svg вставлять? 
+.html-academy-logo a:hover,
+.html-academy-logo a:focus { 
+ fill: #adcde1;
+}
+*/
+
+.weronthispage { /*не понимаю работает или нет? типо мы на вкладке отели */
+	color: #766357;
+}
+
+.hotelssearch {
+	color: #ffffff;
+	background-image: url("../img/backgroundhotel.png");
+	background-repeat: no-repeat;
+	/*background-position: center;*/
+
+}
+/*состояние элементов формы пока пропускаем?*/
+.filter-option,
+.found,
+.search li,
+.catalog-item {
+	list-style: none;
+}
+.filter fieldset {
+	border:none;
+}
+.filter legend {
+	font-size: 16px;
+	font-weight:bold;
+}
+.found h2 {
+	font-size: 21px;
+	line-height: 26px;
+}
+.search-result-number {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+.search-filter-sort, 
+.search-filter-condition {
+	font-size: 12px;
+	line-height: 18px;
+}
+.filter-result-active {
+	color:#81b3d2;
+}
+.search-filter-condition .filter-result {
+	color: rgba(0,0,0,0.3);
+	border-bottom-style: dashed;
+	border-bottom-color:#81b3d2;
+	border-bottom-width: 1px;
+}
+/* со стрелочкой не знаю пока как быть*/
+.catalog-item-name {
+	font-size: 21px;
+	line-height: 26px;
+}
+.gotohotel{
+	color: #000000;
+}
+
+ /*что то тут не так как то работает?*/
+.gotohotel:hover {
+	color:#81b3d2;
+	outline: none;
+}
+.gotohotel h3:active {
+	opacity: 0.3;
+}
+.button-catalog-info {
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	border: none;
+	background-color: #81b3d2; 
+}
+.button-catalog-bookin { /*их наверное в див еще обернуть надо чтобы потом размер сделать побольше?*/
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	border: none;
+	background-color: #766357;
+}
+.button-catalog-bookin:hover,
+.button-catalog-bookin:focus {
+	background-color: #604e43; 
+	outline:none;
+  }
+
+.button-catalog-bookin:active { 
+	opacity: 0.3;
+	outline:none;
+	background-color: #503e33;
+}
+
+.button-catalog-info:hover,
+.button-catalog-info:focus {
+	background-color: #669ec0;
+	outline:none;
+}
+.button-catalog-info:active {
+	outline:none;
+	background-color: #5496bd;
+}
+.catalog-item-rating,
+.quality {
+	color:#666666;
+	background-color: #f2f2f2;
+}
